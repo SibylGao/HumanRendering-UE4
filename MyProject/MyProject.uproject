@@ -1,0 +1,45 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.25",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "MyProject",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"LidarPointCloudRuntime",
+				"CoreUObject"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "LidarPointCloud",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Mac",
+				"Linux"
+			]
+		},
+		{
+			"Name": "Op",
+			"Enabled": false
+		},
+		{
+			"Name": "yui76",
+			"Enabled": false
+		},
+		{
+			"Name": "Eigendfsdf",
+			"Enabled": false
+		},
+		{
+			"Name": "GPUPointCloudRenderer",
+			"Enabled": true
+		}
+	]
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>C:\Users\gaoshiyu\Desktop\yjf\MyProject\Plugins\Boost\ThirdParty\Boost\Win64\Include;C:\Users\gaoshiyu\Desktop\yjf\MyProject\Plugins\MyEigen\ThirdParty\MyEigen\Win64\Include;C:\Users\gaoshiyu\Desktop\yjf\MyProject\Plugins\OpenCV\ThirdParty\OpenCV\Win64\Include</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup />
+</Project>

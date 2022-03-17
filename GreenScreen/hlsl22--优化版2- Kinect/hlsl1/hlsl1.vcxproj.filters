@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="着色器">
+      <UniqueIdentifier>{5c1bd6e9-71bc-48e0-a5ee-57968cd77eef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hlsl1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QtGuiClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WICTextureLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenGrab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="myKinect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="socket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sockettcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="socketudp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="hlsl1.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="QtGuiClass.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="hlsl1.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="QtGuiClass.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="hlsl1.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Header.hlsli">
+      <Filter>着色器</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="VertexShader.hlsl">
+      <Filter>着色器</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader_fore.hlsl">
+      <Filter>着色器</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader_output.hlsl">
+      <Filter>着色器</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader_clip.hlsl">
+      <Filter>着色器</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader_dilateErode.hlsl">
+      <Filter>着色器</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader_featherX.hlsl">
+      <Filter>着色器</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader_featherY.hlsl">
+      <Filter>着色器</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader_composite.hlsl">
+      <Filter>着色器</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader_matte.hlsl">
+      <Filter>着色器</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader_CoreMatte.hlsl">
+      <Filter>着色器</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader_preBlur.hlsl">
+      <Filter>着色器</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader_postBlur.hlsl">
+      <Filter>着色器</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader_GarbageMatte.hlsl">
+      <Filter>着色器</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader_brightANDcontrast.hlsl">
+      <Filter>着色器</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader_gamma.hlsl">
+      <Filter>着色器</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader_sharp.hlsl">
+      <Filter>着色器</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader_binarization.hlsl">
+      <Filter>着色器</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WICTextureLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenGrab.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="myKinect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="socket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sockettcp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="socketudp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="hlsl1.rc" />
+  </ItemGroup>
+</Project>

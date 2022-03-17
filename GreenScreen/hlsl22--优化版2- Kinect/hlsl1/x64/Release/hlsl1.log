@@ -1,0 +1,40 @@
+﻿  Reading Qt configuration (E:/Qt/Qt5.11.2/5.11.2/msvc2017_64/bin/qmake)
+  compilation object save succeeded; see C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--优化版2- Kinect\hlsl1\HLSL\PixelShader_binarization.cso
+  compilation object save succeeded; see C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--优化版2- Kinect\hlsl1\HLSL\PixelShader_brightANDcontrast.cso
+  compilation object save succeeded; see C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--优化版2- Kinect\hlsl1\HLSL\PixelShader_CoreMatte.cso
+  compilation object save succeeded; see C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--优化版2- Kinect\hlsl1\HLSL\PixelShader_gamma.cso
+C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--�Ż�??- Kinect\hlsl1\PixelShader_matte.hlsl(6,16-40): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--�Ż�??- Kinect\hlsl1\PixelShader_matte.hlsl(7,16-40): warning X3556: integer modulus may be much slower, try using uints if possible.
+  
+  compilation object save succeeded; see C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--优化版2- Kinect\hlsl1\HLSL\PixelShader_matte.cso
+  compilation object save succeeded; see C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--优化版2- Kinect\hlsl1\HLSL\PixelShader_clip.cso
+  compilation object save succeeded; see C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--优化版2- Kinect\hlsl1\HLSL\PixelShader_composite.cso
+  compilation object save succeeded; see C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--优化版2- Kinect\hlsl1\HLSL\PixelShader_dilateErode.cso
+  compilation object save succeeded; see C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--优化版2- Kinect\hlsl1\HLSL\PixelShader_featherX.cso
+  compilation object save succeeded; see C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--优化版2- Kinect\hlsl1\HLSL\PixelShader_featherY.cso
+C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--�Ż�??- Kinect\hlsl1\PixelShader_fore.hlsl(15,16-40): warning X3556: integer modulus may be much slower, try using uints if possible.
+C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--�Ż�??- Kinect\hlsl1\PixelShader_fore.hlsl(16,16-40): warning X3556: integer modulus may be much slower, try using uints if possible.
+  
+  compilation object save succeeded; see C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--优化版2- Kinect\hlsl1\HLSL\PixelShader_fore.cso
+  compilation object save succeeded; see C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--优化版2- Kinect\hlsl1\HLSL\PixelShader_GarbageMatte.cso
+  compilation object save succeeded; see C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--优化版2- Kinect\hlsl1\HLSL\PixelShader_output.cso
+  compilation object save succeeded; see C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--优化版2- Kinect\hlsl1\HLSL\PixelShader_postBlur.cso
+  compilation object save succeeded; see C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--优化版2- Kinect\hlsl1\HLSL\PixelShader_preBlur.cso
+  compilation object save succeeded; see C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--优化版2- Kinect\hlsl1\HLSL\PixelShader_sharp.cso
+  compilation object save succeeded; see C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--优化版2- Kinect\hlsl1\HLSL\VertexShader.cso
+  uic hlsl1.ui
+  uic QtGuiClass.ui
+  rcc hlsl1.qrc
+  moc hlsl1.h
+  moc QtGuiClass.h
+   RCC: Warning: No resources in 'C:\Users\DELL\Desktop\yjf\GreenScreen\hlsl22--浼樺寲鐗?- Kinect\hlsl1\hlsl1.qrc'.
+  hlsl1.cpp
+  main.cpp
+  myKinect.cpp
+  QtGuiClass.cpp
+  ScreenGrab.cpp
+  socket.cpp
+  sockettcp.cpp
+  socketudp.cpp
+  WICTextureLoader.cpp
+cl : 命令行 error D8040: 创建子进程或与子进程通讯时出错

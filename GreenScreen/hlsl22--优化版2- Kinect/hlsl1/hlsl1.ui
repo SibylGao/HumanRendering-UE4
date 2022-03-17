@@ -1,0 +1,1571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>hlsl1Class</class>
+ <widget class="QMainWindow" name="hlsl1Class">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1116</width>
+    <height>863</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>hlsl1</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="ResultDisplayLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>500</y>
+      <width>411</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>630</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>前景图</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ImportButton">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>10</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>导出结果</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>420</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>蒙版</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="KeyingMatteButton">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>10</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>蒙版</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="ScreenBalanceSlider">
+    <property name="geometry">
+     <rect>
+      <x>685</x>
+      <y>50</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>原图</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ScreenBalanceLabel">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>50</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>屏幕平衡</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ScreenBalanceValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>865</x>
+      <y>50</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0.500</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ImageDisplayLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>411</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SelectImageButton">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>10</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>导入图像</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="KeyingImageButton">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>10</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>前景</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ResultDisplayLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>500</y>
+      <width>411</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="despillFactorLabel">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>80</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>非溢出系数</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="despillBalanceLabel">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>110</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>非溢出平衡</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="despillFactorValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>865</x>
+      <y>80</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1.000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="despillBalanceValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>865</x>
+      <y>110</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0.500</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="despillFactorSlider">
+    <property name="geometry">
+     <rect>
+      <x>685</x>
+      <y>80</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="despillBalanceSlider">
+    <property name="geometry">
+     <rect>
+      <x>685</x>
+      <y>110</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="edgeKernelRadiusLabel">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>170</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>边缘核心半径</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="edgeKernelToleranceSlider">
+    <property name="geometry">
+     <rect>
+      <x>685</x>
+      <y>200</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PreBlurValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>865</x>
+      <y>140</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="clipBlackLabel">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>230</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>钳制黑色</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="clipBlackSlider">
+    <property name="geometry">
+     <rect>
+      <x>685</x>
+      <y>230</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="edgeKernelToleranceValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>865</x>
+      <y>200</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0.100</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="PreBlurSlider">
+    <property name="geometry">
+     <rect>
+      <x>685</x>
+      <y>140</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="edgeKernelRadiusValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>865</x>
+      <y>170</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PreBlurLabel">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>140</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>预模糊</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="clipWhiteSlider">
+    <property name="geometry">
+     <rect>
+      <x>685</x>
+      <y>260</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="clipBlackValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>865</x>
+      <y>230</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0.000</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="edgeKernelRadiusSlider">
+    <property name="geometry">
+     <rect>
+      <x>685</x>
+      <y>170</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="clipWhiteValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>865</x>
+      <y>260</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1.000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="edgeKernelToleranceLabel">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>200</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>边缘核心容差</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="clipWhiteLabel">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>260</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>钳制白色</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PostBlurValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>290</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="PostBlurSlider">
+    <property name="geometry">
+     <rect>
+      <x>685</x>
+      <y>290</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PostBlurLabel">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>290</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>后期模糊</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="featherFalloffValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>350</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="DilateErodeSlider">
+    <property name="geometry">
+     <rect>
+      <x>685</x>
+      <y>320</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="featherDistanceValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>380</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="featherDistanceLabel">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>380</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>羽化距离</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="featherDistanceSlider">
+    <property name="geometry">
+     <rect>
+      <x>685</x>
+      <y>380</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="DilateErodeLabel">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>320</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>膨胀/腐蚀</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="featherFalloffLabel">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>350</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>羽化衰减</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="DilateErodeValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>320</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="featherFalloffComboBox">
+    <property name="geometry">
+     <rect>
+      <x>685</x>
+      <y>350</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>平滑</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>球状</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>根凸</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>平方反比</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>锐利</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>线性</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="MaskComboBox">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>76</y>
+      <width>70</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>方形</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>椭圆</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="XLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>396</y>
+      <width>72</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>x:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TransparentLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>546</y>
+      <width>72</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>透明度：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="MaskTypeComboBox">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>296</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>相加</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>相减</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>正片叠底（相乘）</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>非</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QDoubleSpinBox" name="HeightDoubleSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>200</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="XDoubleSpinBox_2">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>396</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="MaskComboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>362</y>
+      <width>70</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>方形</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>椭圆</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QDoubleSpinBox" name="RotationDoubleSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>230</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="CoreMatteCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>336</y>
+      <width>91</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>核心遮罩</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="XLabel">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>110</y>
+      <width>72</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>x:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RotationLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>516</y>
+      <width>72</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>旋转：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="WidthLabel">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>170</y>
+      <width>72</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>宽度:</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="TransparentDoubleSpinBox_2">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>546</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="WidthDoubleSpinBox_2">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>456</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="HeightDoubleSpinBox_2">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>486</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="MaskTypeComboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>582</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>相加</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>相减</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>正片叠底（相乘）</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>非</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="MaskLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>366</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>遮罩：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="WidthLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>456</y>
+      <width>72</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>宽度:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MaskTypeLabel">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>300</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>遮罩类型：</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="TransparentDoubleSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>260</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="YDoubleSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>140</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TransparentLabel">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>260</y>
+      <width>72</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>透明度：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="HeightLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>486</y>
+      <width>72</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>高度：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="HeightLabel">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>200</y>
+      <width>72</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>高度：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MaskLabel">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>80</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>遮罩：</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="XDoubleSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>110</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="YLabel">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>140</y>
+      <width>72</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>y:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MaskTypeLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>586</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>遮罩类型：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="YLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>426</y>
+      <width>72</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>y:</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="RotationDoubleSpinBox_2">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>516</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="YDoubleSpinBox_2">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>426</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RotationLabel">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>230</y>
+      <width>72</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>旋转：</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="GarbageMatteCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>50</y>
+      <width>91</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>垃圾遮罩</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="WidthDoubleSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>170</y>
+      <width>70</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="CompositeRadioButton">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>50</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>composite</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SelectBackgroundButton">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>10</y>
+      <width>131</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>导入背景图像</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SelectVideoButton">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>80</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>导入视频</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SelectKinectButton">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>250</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Kinect</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="getOneFrameButton">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>130</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Kinect获取一帧</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gammaLabel">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>410</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>gamma校正</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="contrastLabel">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>470</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>对比度</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sharpLabel">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>500</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>锐化</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="brightnessLabel">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>440</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>亮度</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="contrastValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>480</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="sharpSlider">
+    <property name="geometry">
+     <rect>
+      <x>685</x>
+      <y>510</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="contrastSlider">
+    <property name="geometry">
+     <rect>
+      <x>685</x>
+      <y>480</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="gammaSlider">
+    <property name="geometry">
+     <rect>
+      <x>685</x>
+      <y>420</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sharpValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>510</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="brightnessSlider">
+    <property name="geometry">
+     <rect>
+      <x>685</x>
+      <y>450</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gammaValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>420</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="brightnessValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>450</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="binarizationLabel">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>530</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>二值化</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="binaryCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>570</y>
+      <width>91</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>二值化</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="binarizationValueLabel">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>530</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="binarizationSlider">
+    <property name="geometry">
+     <rect>
+      <x>685</x>
+      <y>530</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1116</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="hlsl1.qrc"/>
+ </resources>
+ <connections/>
+</ui>
